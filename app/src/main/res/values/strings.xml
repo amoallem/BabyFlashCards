@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BabyFlashCards</string>
+    <string name="about">About</string>
+
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="farsi">Farsi</string>
+
+    <string name="animals">Animals</string>
+    <string name="colors">Colors</string>
+    <string name="fruits">Fruits</string>
+
+    <string name="rabbit">Rabbit</string>
+    <string name="cow">Cow</string>
+    <string name="horse">Horse</string>
+
+    <string name="apple">Apple</string>
+    <string name="orange">Orange</string>
+    <string name="strawberry">Strawberry</string>
+
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+
+    <string-array name="categories">
+        <item>@string/animals</item>
+        <item>@string/colors</item>
+    </string-array>
+    <string name="title_activity_animals">AnimalsActivity</string>
+</resources>
