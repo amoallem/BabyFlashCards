@@ -11,15 +11,16 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.Button;
 import android.content.Intent;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener{
 
-    Button buttonAnimals, buttonColors, buttonFruits;
+    ImageButton buttonAnimals, buttonColors, buttonFruits;
     MediaPlayer soundAnimals, soundColors;
-    EditText userName;
+    //EditText userName;
     private  SharedPreferences  preferences;
     private  SharedPreferences.Editor  editor;
 
@@ -28,27 +29,27 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        buttonAnimals = (Button) findViewById(R.id.buttonAnimals);
+        buttonAnimals = (ImageButton) findViewById(R.id.buttonAnimals);
         buttonAnimals.setOnClickListener(this);
 
-        buttonColors = (Button) findViewById(R.id.buttonColors);
+        buttonColors = (ImageButton) findViewById(R.id.buttonColors);
         buttonColors.setOnClickListener(this);
 
-        buttonFruits = (Button) findViewById(R.id.buttonFruits);
+        buttonFruits = (ImageButton) findViewById(R.id.buttonFruits);
         buttonFruits.setOnClickListener(this);
 
         soundAnimals = MediaPlayer.create(this, R.raw.sound_animal);
-        userName = (EditText) findViewById(R.id.editTextName);
+        //userName = (EditText) findViewById(R.id.editTextName);
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         editor = preferences.edit();
 
 
-        if(preferences.contains(PersistedPreferences.SELECTED_CHILD_NAME)){
-            userName.setText(preferences.getString(PersistedPreferences.SELECTED_CHILD_NAME, "Enter your child's name "));
-        }
+        //if(preferences.contains(PersistedPreferences.SELECTED_CHILD_NAME)){
+        //    userName.setText(preferences.getString(PersistedPreferences.SELECTED_CHILD_NAME, "Enter your child's name "));
+        //}
 
-        userName.addTextChangedListener(new TextWatcher() {
+       /* userName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -64,7 +65,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 editor.putString(PersistedPreferences.SELECTED_CHILD_NAME, userName.getText().toString());
                 editor.commit();
             }
-        });
+        });*/
 
 
 
