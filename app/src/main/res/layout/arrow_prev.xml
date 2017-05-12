@@ -1,0 +1,11 @@
+<android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/fab_margin"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/arrow_prev"
+    app:backgroundTint="@android:color/holo_green_dark"
+    android:alpha="0.30"
+    android:onClick="arrowPrev"/>

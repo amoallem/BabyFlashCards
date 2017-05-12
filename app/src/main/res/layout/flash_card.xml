@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flash_card"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_card"
+        android:layout_marginTop="15dp"
+        android:layout_width="450dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+
+    <TextView
+        android:id="@+id/image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="15dp"
+        android:textColor="#191975"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/arrow_prev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/arrow_prev"
+            app:backgroundTint="@android:color/holo_green_dark"
+            android:alpha="0.30"
+            android:onClick="arrowPrev"/>
+
+        <android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/arrow_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/arrow_next"
+            app:backgroundTint="@android:color/holo_green_dark"
+            android:alpha="0.30"
+            android:onClick="arrowNext"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

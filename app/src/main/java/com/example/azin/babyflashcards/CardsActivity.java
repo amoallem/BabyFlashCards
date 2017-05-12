@@ -1,11 +1,9 @@
 package com.example.azin.babyflashcards;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.MotionEvent;
-import android.widget.ImageView;
-import android.content.Intent;
+import android.view.View;
 import android.widget.ViewFlipper;
 
 public abstract class CardsActivity extends BaseActivity {
@@ -37,33 +35,50 @@ public abstract class CardsActivity extends BaseActivity {
 
                 // if left to right swipe on screen
                 if (lastX < currentX) {
-                    // If no more View/Child to flip
-                    if (viewFlipper.getDisplayedChild() == 0)
-                        break;
-
-                    // set the required Animation type to ViewFlipper
-                    // The Next screen will come in form Left and current Screen will go OUT from Right
-                    viewFlipper.setInAnimation(this, R.anim.in_from_left);
-                    viewFlipper.setOutAnimation(this, R.anim.out_to_right);
-                    // Show the next Screen
-                    viewFlipper.showNext();
+                 setViewFlipperSwipeLeftToRight();
                 }
 
                 // if right to left swipe on screen
                 if (lastX > currentX) {
-                    if (viewFlipper.getDisplayedChild() == 1)
-                        break;
-                    // set the required Animation type to ViewFlipper
-                    // The Next screen will come in form Right and current Screen will go OUT from Left
-                    viewFlipper.setInAnimation(this, R.anim.in_from_right);
-                    viewFlipper.setOutAnimation(this, R.anim.out_to_left);
-                    // Show The Previous Screen
-                    viewFlipper.showPrevious();
+                   viewFlipperSwipeRightToLeft();
                 }
                 break;
             }
         }
         return false;
+    }
+
+    public void arrowNext(View view){
+        viewFlipperSwipeRightToLeft();
+    }
+
+    public void arrowPrev(View view){
+        setViewFlipperSwipeLeftToRight();
+    }
+
+    private void viewFlipperSwipeRightToLeft(){
+        if (viewFlipper.getDisplayedChild() == viewFlipper.getChildCount() - 1)
+            return;
+        // set the required Animation type to ViewFlipper
+        // The Next screen will come in form Right and current Screen will go OUT from Left
+        viewFlipper.setInAnimation(this, R.anim.in_from_right);
+        viewFlipper.setOutAnimation(this, R.anim.out_to_left);
+        viewFlipper.showNext();
+
+    }
+
+    private void  setViewFlipperSwipeLeftToRight(){
+
+        // If no more View/Child to flip
+        if (viewFlipper.getDisplayedChild() == 0)
+            return;
+
+        // set the required Animation type to ViewFlipper
+        // The Next screen will come in form Left and current Screen will go OUT from Right
+        viewFlipper.setInAnimation(this, R.anim.in_from_left);
+        viewFlipper.setOutAnimation(this, R.anim.out_to_right);
+        viewFlipper.showPrevious();
+
     }
 
 }
