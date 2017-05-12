@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BabyFlashCards</string>
     <string name="about">About</string>
+    <string name="chooseCategory">Choose a category</string>
 
     <string name="language">Language</string>
     <string name="english">English</string>
