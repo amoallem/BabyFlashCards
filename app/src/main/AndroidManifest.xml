@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.azin.babyflashcards">
+    package="com.doost.babyflashcards">
 
     <application
         android:allowBackup="true"
@@ -8,23 +8,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".HomeActivity">
+        <activity android:name="me.doost.babyflashcards.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CardsActivity"/>
+        <activity android:name="me.doost.babyflashcards.CardsActivity"/>
 
-        <activity android:name=".AnimalCardsActivity"
-            android:parentActivityName="com.example.azin.babyflashcards.HomeActivity">
+        <activity android:name="me.doost.babyflashcards.AnimalCardsActivity"
+            android:parentActivityName="me.doost.babyflashcards.HomeActivity">
         </activity>
-        <activity android:name=".FruitCardsActivity"
-            android:parentActivityName="com.example.azin.babyflashcards.HomeActivity">
+        <activity android:name="me.doost.babyflashcards.FruitCardsActivity"
+            android:parentActivityName="me.doost.babyflashcards.HomeActivity">
         </activity>
-        <activity android:name=".ColorCardsActivity"
-            android:parentActivityName="com.example.azin.babyflashcards.HomeActivity">
+        <activity android:name="me.doost.babyflashcards.ColorCardsActivity"
+            android:parentActivityName="me.doost.babyflashcards.HomeActivity">
         </activity>
 
     </application>

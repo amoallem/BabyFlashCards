@@ -1,4 +1,4 @@
-package com.example.azin.babyflashcards;
+package me.doost.babyflashcards;
 
 import android.annotation.TargetApi;
 import android.content.Context;

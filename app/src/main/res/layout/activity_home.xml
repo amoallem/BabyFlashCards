@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tableLayout1"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/home_gradiant">
+    android:fillViewport="true">
 
-    <include xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
-
-    <TableRow
-        android:id="@+id/tableRow0"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dip" >
+        android:background="@drawable/home_gradiant"
+        android:paddingBottom="20dp">
+
+        <include xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -29,67 +29,40 @@
             android:gravity="center"
             android:layout_weight="1"/>
 
-    </TableRow>
-
-    <!-- 2 columns -->
-    <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dip" >
-
         <ImageButton
             android:id="@+id/buttonColors"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/colors_icon"
+            android:src="@drawable/colors_icon2"
             android:background="@drawable/rounded_button"
-            android:contentDescription="obrazek"
-            android:padding="5dp"
+            android:contentDescription="Colors"
+            android:padding="10dp"
             android:layout_margin="1dp"
-            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            />
-    </TableRow>
-
-    <!-- edittext span 2 column -->
-    <TableRow
-        android:id="@+id/tableRow2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dip" >
+            android:layout_height="@dimen/homepage_icon_height"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:id="@+id/buttonFruits"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/fruits_icon"
+            android:layout_height="@dimen/homepage_icon_height"
+            android:src="@drawable/fruits_icon2"
             android:background="@drawable/rounded_button"
-            android:contentDescription="obrazek"
+            android:contentDescription="Fruits"
             android:padding="5dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            />
-    </TableRow>
+            android:scaleType="fitCenter" />
 
-    <!-- 3 columns -->
-    <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dip" >
         <ImageButton
             android:id="@+id/buttonAnimals"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/animals_icon"
+            android:layout_height="@dimen/homepage_icon_height"
+            android:src="@drawable/animals_icon2"
             android:background="@drawable/rounded_button"
-            android:contentDescription="obrazek"
+            android:contentDescription="Animals"
             android:padding="5dp"
             android:layout_margin="1dp"
-            android:layout_weight="1"
-            />
-    </TableRow>
-
-
-</TableLayout>
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+</ScrollView>

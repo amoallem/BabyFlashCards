@@ -1,20 +1,14 @@
-package com.example.azin.babyflashcards;
+package me.doost.babyflashcards;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
-import android.widget.Button;
 import android.content.Intent;
+
+import com.doost.babyflashcards.R;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener{
 
@@ -87,19 +81,19 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
         Intent goToCards = new Intent();
 
         if(v.equals(buttonAnimals)){
-            Toast.makeText(getApplicationContext(), "Anilams !! Good choice madam", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "Anilams !! Good choice madam", Toast.LENGTH_SHORT).show();
             //soundAnimals.start();
        //    category = "animals";
             goToCards.setClass(this, AnimalCardsActivity.class);
 
 
         }else if(v.equals(buttonColors)){
-            Toast.makeText(getApplicationContext(), "Colors !! Good choice madam", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getApplicationContext(), "Colors !! Good choice madam", Toast.LENGTH_SHORT).show();
          //   category="colors";
             goToCards.setClass(this, ColorCardsActivity.class);
 
         }else if(v.equals(buttonFruits)){
-            Toast.makeText(getApplicationContext(), "Fruits !! Good Choice madam", Toast.LENGTH_SHORT).show();
+         //   Toast.makeText(getApplicationContext(), "Fruits !! Good Choice madam", Toast.LENGTH_SHORT).show();
          //   category = "fruits";
             goToCards.setClass(this, FruitCardsActivity.class);
 

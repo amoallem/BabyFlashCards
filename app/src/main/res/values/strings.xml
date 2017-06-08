@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BabyFlashCards</string>
+    <string name="app_name">Farsi Baby Flash Cards</string>
     <string name="about">About</string>
     <string name="chooseCategory">Choose a category</string>
 
@@ -29,4 +29,10 @@
         <item>@string/colors</item>
     </string-array>
     <string name="title_activity_animals">AnimalsActivity</string>
+    <string name="cat">Cat</string>
+    <string name="dog">Dog</string>
+    <string name="carrot">Carrot</string>
+    <string name="mango">Mango</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
 </resources>

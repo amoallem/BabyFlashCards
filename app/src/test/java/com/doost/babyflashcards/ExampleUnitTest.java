@@ -1,4 +1,4 @@
-package com.example.azin.babyflashcards;
+package com.doost.babyflashcards;
 
 import org.junit.Test;
 

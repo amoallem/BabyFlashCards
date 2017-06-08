@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".HomeActivity">
+    tools:context="me.doost.babyflashcards.HomeActivity">
     <item
         android:id="@+id/settings"
         android:orderInCategory="100"
@@ -16,7 +16,7 @@
         android:id="@+id/action_language"
         android:orderInCategory="200"
         android:title="Language"
-        android:icon="@android:drawable/ic_menu_myplaces"
+        android:icon="@drawable/ic_language_black_24dp"
         app:showAsAction="ifRoom">
             <menu>
                 <item android:id="@+id/sub_menu_english" android:title="@string/english"></item>

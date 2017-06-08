@@ -1,38 +1,40 @@
-package com.example.azin.babyflashcards;
+package me.doost.babyflashcards;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.doost.babyflashcards.R;
 
-public class AnimalCardsActivity extends CardsActivity {
+public class ColorCardsActivity extends CardsActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent callerIntent = getIntent();
-        int animalImages[] = {R.drawable.animals_cow, R.drawable.animals_horse, R.drawable.animals_rabbit};
-        int animalTexts[] = {R.string.cow, R.string.horse, R.string.rabbit};
+        int colorImages[] = {Color.RED, Color.BLUE, Color.GREEN, Color.BLACK, Color.YELLOW, Color.WHITE};
+        int colorTexts[] = {R.string.red, R.string.blue, R.string.green, R.string.black, R.string.yellow, R.string.white};
 
-        ViewGroup viewFlipperAnimalCards = (ViewGroup) findViewById(R.id.viewFlipper_animal_cards);
+        ViewGroup viewFlipperAnimalCards = (ViewGroup) findViewById(R.id.viewFlipper_color_cards);
 
-        for (int index = 0; index < animalImages.length ; index++) {
+        for (int index = 0; index < colorImages.length ; index++) {
 
 
             View flashCardLayout = getLayoutInflater().inflate(R.layout.flash_card, null);
 
             ImageView imageCard = (ImageView) flashCardLayout.findViewById(R.id.image_card);
-            imageCard.setBackgroundResource(animalImages[index]);
+            imageCard.setBackgroundColor(colorImages[index]);
 
             TextView imageText = (TextView) flashCardLayout.findViewById(R.id.image_text);
-            imageText.setText(animalTexts[index]);
+            imageText.setText(colorTexts[index]);
 
-            if (index == 0) {
+           if (index == 0) {
                 flashCardLayout.findViewById(R.id.arrow_prev).setVisibility(View.INVISIBLE);
-            } else if (index == animalImages.length - 1) {
+            } else if (index == colorImages.length - 1) {
                 flashCardLayout.findViewById(R.id.arrow_next).setVisibility(View.INVISIBLE);
             }
             viewFlipperAnimalCards.addView(flashCardLayout);
@@ -43,12 +45,11 @@ public class AnimalCardsActivity extends CardsActivity {
 
     @Override
     protected int getViewFlipperID() {
-        return R.id.viewFlipper_animal_cards;
+        return R.id.viewFlipper_color_cards;
     }
 
     @Override
     protected int getLayoutResource() {
-        return R.layout.activity_animal_cards;
+        return R.layout.activity_color_cards;
     }
-
 }

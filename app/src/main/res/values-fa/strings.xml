@@ -19,4 +19,10 @@
     <string name="green">سبز</string>
     <string name="about">درباره</string>
     <string name="chooseCategory">یک گروه انتخاب کنید</string>
+    <string name="cat">گربه</string>
+    <string name="dog">سگ</string>
+    <string name="carrot">هویج</string>
+    <string name="mango">انبه</string>
+    <string name="white">سفید</string>
+    <string name="black">سیاه</string>
 </resources>

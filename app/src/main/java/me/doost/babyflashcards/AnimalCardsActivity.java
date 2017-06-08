@@ -1,4 +1,4 @@
-package com.example.azin.babyflashcards;
+package me.doost.babyflashcards;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,31 +7,34 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class FruitCardsActivity extends CardsActivity {
+import com.doost.babyflashcards.R;
+
+
+public class AnimalCardsActivity extends CardsActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent callerIntent = getIntent();
-        int fruitImages[] = {R.drawable.fruits_apple, R.drawable.fruits_orange, R.drawable.fruits_strawberry};
-        int fruitTexts[] = {R.string.apple, R.string.orange, R.string.strawberry};
+        int animalImages[] = {R.drawable.animals_cow, R.drawable.animals_horse, R.drawable.animals_rabbit, R.drawable.animals_cat, R.drawable.animals_dog};
+        int animalTexts[] = {R.string.cow, R.string.horse, R.string.rabbit, R.string.cat, R.string.dog};
 
-        ViewGroup viewFlipperAnimalCards = (ViewGroup) findViewById(R.id.viewFlipper_fruit_cards);
+        ViewGroup viewFlipperAnimalCards = (ViewGroup) findViewById(R.id.viewFlipper_animal_cards);
 
-        for (int index = 0; index < fruitImages.length ; index++) {
+        for (int index = 0; index < animalImages.length ; index++) {
 
 
             View flashCardLayout = getLayoutInflater().inflate(R.layout.flash_card, null);
 
             ImageView imageCard = (ImageView) flashCardLayout.findViewById(R.id.image_card);
-            imageCard.setBackgroundResource(fruitImages[index]);
+            imageCard.setImageResource(animalImages[index]);
 
             TextView imageText = (TextView) flashCardLayout.findViewById(R.id.image_text);
-            imageText.setText(fruitTexts[index]);
+            imageText.setText(animalTexts[index]);
 
             if (index == 0) {
                 flashCardLayout.findViewById(R.id.arrow_prev).setVisibility(View.INVISIBLE);
-            } else if (index == fruitImages.length - 1) {
+            } else if (index == animalImages.length - 1) {
                 flashCardLayout.findViewById(R.id.arrow_next).setVisibility(View.INVISIBLE);
             }
             viewFlipperAnimalCards.addView(flashCardLayout);
@@ -42,11 +45,12 @@ public class FruitCardsActivity extends CardsActivity {
 
     @Override
     protected int getViewFlipperID() {
-        return R.id.viewFlipper_fruit_cards;
+        return R.id.viewFlipper_animal_cards;
     }
 
     @Override
     protected int getLayoutResource() {
-        return R.layout.activity_fruit_cards;
+        return R.layout.activity_animal_cards;
     }
+
 }

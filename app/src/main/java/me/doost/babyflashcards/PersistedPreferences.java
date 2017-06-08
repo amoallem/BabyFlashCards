@@ -1,4 +1,4 @@
-package com.example.azin.babyflashcards;
+package me.doost.babyflashcards;
 
 /**
  * Created by azin on 2017-02-22.

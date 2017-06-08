@@ -1,10 +1,12 @@
-package com.example.azin.babyflashcards;
+package me.doost.babyflashcards;
 
 import android.os.Bundle;
 
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ViewFlipper;
+
+import com.doost.babyflashcards.R;
 
 public abstract class CardsActivity extends BaseActivity {
 
