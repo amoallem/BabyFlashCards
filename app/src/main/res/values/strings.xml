@@ -28,7 +28,6 @@
         <item>@string/animals</item>
         <item>@string/colors</item>
     </string-array>
-    <string name="title_activity_animals">AnimalsActivity</string>
     <string name="cat">Cat</string>
     <string name="dog">Dog</string>
     <string name="carrot">Carrot</string>
