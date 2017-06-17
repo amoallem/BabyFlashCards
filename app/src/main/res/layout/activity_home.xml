@@ -31,38 +31,38 @@
 
         <ImageButton
             android:id="@+id/buttonColors"
-            android:layout_width="fill_parent"
+            android:layout_width="152dp"
             android:src="@drawable/colors_icon2"
             android:background="@drawable/rounded_button"
             android:contentDescription="Colors"
             android:padding="2dp"
             android:layout_margin="1dp"
-            android:layout_weight="1"
             android:layout_height="@dimen/homepage_icon_height"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
 
         <ImageButton
             android:id="@+id/buttonFruits"
-            android:layout_width="fill_parent"
+            android:layout_width="159dp"
             android:layout_height="@dimen/homepage_icon_height"
             android:src="@drawable/fruits_icon2"
             android:background="@drawable/rounded_button"
             android:contentDescription="Fruits"
             android:padding="5dp"
             android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:layout_gravity="center" />
 
         <ImageButton
             android:id="@+id/buttonAnimals"
-            android:layout_width="fill_parent"
+            android:layout_width="153dp"
             android:layout_height="@dimen/homepage_icon_height"
             android:src="@drawable/animals_icon2"
             android:background="@drawable/rounded_button"
             android:contentDescription="Animals"
             android:padding="2dp"
             android:layout_margin="1dp"
-            android:layout_gravity="center_vertical"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
     </LinearLayout>
 </ScrollView>
