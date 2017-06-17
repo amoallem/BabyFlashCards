@@ -35,7 +35,7 @@
             android:src="@drawable/colors_icon2"
             android:background="@drawable/rounded_button"
             android:contentDescription="Colors"
-            android:padding="10dp"
+            android:padding="2dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:layout_height="@dimen/homepage_icon_height"
@@ -60,7 +60,7 @@
             android:src="@drawable/animals_icon2"
             android:background="@drawable/rounded_button"
             android:contentDescription="Animals"
-            android:padding="5dp"
+            android:padding="2dp"
             android:layout_margin="1dp"
             android:layout_gravity="center_vertical"
             android:scaleType="fitCenter" />
