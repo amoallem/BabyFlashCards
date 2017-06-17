@@ -7,8 +7,8 @@ android {
         applicationId "me.doost.babyflashcards"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 2
-        versionName "1.1-BETA"
+        versionCode 3
+        versionName "1.2-BETA"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

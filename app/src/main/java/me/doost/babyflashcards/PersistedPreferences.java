@@ -7,5 +7,5 @@ package me.doost.babyflashcards;
 public interface PersistedPreferences {
 
     public static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
-    public static final String SELECTED_CHILD_NAME = "child.name";
+
 }
