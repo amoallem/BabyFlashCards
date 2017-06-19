@@ -23,6 +23,9 @@
     <string name="blue">Blue</string>
     <string name="yellow">Yellow</string>
     <string name="green">Green</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+    <string name="ColorOrange">Orange</string>
 
     <string-array name="categories">
         <item>@string/animals</item>
@@ -32,6 +35,5 @@
     <string name="dog">Dog</string>
     <string name="carrot">Carrot</string>
     <string name="mango">Mango</string>
-    <string name="black">Black</string>
-    <string name="white">White</string>
+
 </resources>
