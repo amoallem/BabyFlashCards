@@ -21,7 +21,7 @@ public class ColorCardsActivity extends CardsActivity {
 
         Color.rgb(14, 133, 35);
         int colorImages[] = {Color.RED, Color.BLUE, Color.GREEN, Color.BLACK, Color.YELLOW, Color.WHITE,  Color.rgb(255,165,0)};
-        int colorTexts[] = {R.string.red, R.string.blue, R.string.green, R.string.black, R.string.yellow, R.string.white, R.string.orange};
+        int colorTexts[] = {R.string.red, R.string.blue, R.string.green, R.string.black, R.string.yellow, R.string.white, R.string.ColorOrange};
 
         ViewGroup viewFlipperAnimalCards = (ViewGroup) findViewById(R.id.viewFlipper_color_cards);
 
