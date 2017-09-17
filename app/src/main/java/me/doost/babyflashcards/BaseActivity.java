@@ -23,7 +23,6 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         Resources resources = this.getResources();
         getSupportActionBar().setTitle(resources.getString(R.string.app_name));

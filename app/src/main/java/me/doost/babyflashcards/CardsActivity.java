@@ -19,6 +19,7 @@ public abstract class CardsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewFlipper  = (ViewFlipper) findViewById(getViewFlipperID());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     protected abstract int getViewFlipperID();
